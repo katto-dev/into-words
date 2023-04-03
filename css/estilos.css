@@ -55,6 +55,7 @@ article {
   display: flex;
   flex-direction: column;
   height: 300px;
+  width: 326px;
 }
 .card-cover-body-img {
   border: 10px solid white;
