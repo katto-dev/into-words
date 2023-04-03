@@ -19,7 +19,7 @@ const fetchDataJSON = async (randomId) => {
             mode: 'cors',
             cache: 'default'
         };
-        let myRequest = new Request("./json/cards.json", myInit); 
+        let myRequest = new Request("./json/data.json", myInit); 
         await fetch(myRequest)
         .then(function (resp) {
             return resp.json();
