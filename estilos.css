@@ -1,0 +1,188 @@
+:root {
+  --dark-flow: hsl(164,74%,49%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-purple: hsl(262, 100%, 8%);
+  --dark-desaturated: hsl(240, 1%, 19%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 30%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--dark-flow);
+  background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.flex {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+article {
+  margin: 10px;
+}
+
+/* CARD COVER */
+.card-cover {
+  background-color: white;
+  /*border: 1px solid yellow;*/
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 326px;
+}
+.card-cover-header {
+  display: block;
+  height: 145px;
+  width: 100%;
+}
+.card-cover-body {
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.card-cover-body-img {
+  border: 10px solid white;
+  border-radius: 50%;
+  background-image: url("../img/cards/presentacion-back.jpg");
+  background-color: white;
+  height: 200px;
+  margin-top: -105px;
+  width: 200px;
+}
+.card-cover-body-title {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: initial;
+}
+.card-cover-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+.card-cover-body-text {
+  color: var(--dark-cyan);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.card-cover-body-category {
+  color: var(--dark-very-desaturated);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.card-cover-body-question {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: initial;
+}
+.card-cover-body-question span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+.card-cover-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-cover-footer-social {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.card-cover-footer-social p {
+  letter-spacing: 1px;
+}
+.card-cover-footer-button {
+  background-color: #d2f7ee;
+  /*background-image: url("../img/cards/presentacion-back.jpg");*/
+  padding: 10px;
+  text-align: center;
+}
+.card-cover-footer-button {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.card-cover-footer-button:hover {
+  background-color: #3C00A8;
+  color: white;
+  cursor: pointer;
+}
+button {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #7b2cbf;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  border: 0px solid var(--dark-cyan);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+button:hover {
+  color: black;
+  background-color: #c77dff;
+  border: 0px solid #555555;
+}
+
+/* CARD BACKCOVER */
+.card-backcover-body {
+  align-items: center;
+  border-bottom: 0px solid rgba(153, 153, 153, 0.383);
+  display: flex;
+  flex-direction: column;
+  max-height: 495px;
+  width: 326px;
+}
+.card-backcover-body span {
+  padding-bottom: 100px;
+}
+.card-backcover-image {
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  height: 495px;
+  overflow: hidden;
+  width: 326px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */

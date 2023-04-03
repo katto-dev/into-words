@@ -1,0 +1,17 @@
+# POKE API
+    * URL: https://pokeapi.co/
+
+# Función Random
+    * Math.random()
+
+# LIVE SASS COMPLILER
+    * VSC --> presionar el botón "Watch Sass" ubicado en la parte inferior del VSC
+    * VSC --> debería quedar el botón en "Watching..."
+    * Configuración de la carpeta "/css" para alojar el css:
+    ---
+    "liveSassCompile.settings.formats": [{
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "./css"
+    }],
+    ---

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTA 2</title>
+
+    <style>
+    body {
+        background-color: black;
+    }
+    .carta-box {
+        margin: 100px;
+        width: 200px;
+        height: 250px;
+        position: relative;
+        perspective: 1000px;
+    }
+    .carta-box:hover .carta {
+        transform: rotateY(180deg);
+    }
+    .carta {
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
+    }
+    .cara {
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .cara.detras {
+        transform: rotateY(180deg);
+    }
+    </style>
+
+</head>
+<head>
+<body>
+    
+    <div class="carta-box">
+        <div class="carta">    
+            <div class="cara">
+                <img src="http://wiki.vykar.com/skins/common/images/2000px-Playing_card_spade_A_svg.png" width="200" height="250px">
+            </div>
+            <div class="cara detras">
+                <img src="http://chetart.com/blog/wp-content/uploads/2012/05/playing-card-back.jpg" width="200" height="250px">
+            </div>    
+        </div>
+    </div>
+
+</body>
+</html>

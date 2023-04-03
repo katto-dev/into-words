@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon-64x64.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+    <title>Into Words 🚀</title>
+</head>
+<body>
+    <main class="flex"></main>
+    <!-- ########## TEMPLATE - INTO WORDS ########## -->
+    <template id="template-card">
+        
+        <article class="card-cover">
+            <img src="./img/cards/perspectiva-back.jpg" alt="imagen header card" class="card-cover-header">
+            
+            <div class="card-cover-body">
+                <img src="./img/cards/perspectiva.png"" alt="imagen card" class="card-cover-body-img">
+                <p class="card-cover-body-category">Perspectivas</p>
+                <p class="card-cover-body-question">Pregunta <span>26</span></p>
+            </div>
+            <div class="card-cover-footer-button" onClick="window.location.reload();">
+                <span>OTRA CARTA<br/>(Click o F5)</span>
+            </div>
+        </article>
+
+        <article class="card-backcover">
+            <img src="./img/cards/card-backcover.jpg" alt="imagen header card" class="card-backcover-image">
+            
+            <div class="card-backcover-body"></div>
+        </article>
+
+    </template>
+    <script src="./js/app-json.js"></script>
+</body>
+</html>
