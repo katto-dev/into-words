@@ -41,7 +41,7 @@ const pintarCard = (data) => {
     const fragment = document.createDocumentFragment();
 
     /* CARD COVER */
-    clone.querySelector('.card-cover-header').setAttribute('src', data.back);
+    clone.querySelector('.card-cover-image-header').setAttribute('src', data.back);
     clone.querySelector('.card-cover-body-img').setAttribute('src', data.img);
     clone.querySelector('.card-cover-body-img').setAttribute('style', `background-image: url(${data.back})`);
     clone.querySelector('.card-cover-body-category').textContent = `${data.category} (${data.id})`;
@@ -49,7 +49,7 @@ const pintarCard = (data) => {
     /*clone.querySelector('.card-cover-footer-button').setAttribute('style', `background-image: url(${data.back})`);*/
 
     /* CARD BACKCOVER */
-    clone.querySelector('.card-backcover-image').setAttribute('src', './img/cards/card-backcover.jpg');
+    clone.querySelector('.card-backcover-image-back').setAttribute('src', './img/cards/card-backcover.jpg');
 
     fragment.appendChild(clone);
     flex.appendChild(fragment)

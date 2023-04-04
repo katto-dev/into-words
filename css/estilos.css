@@ -5,6 +5,7 @@
   --dark-desaturated: hsl(240, 1%, 19%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 30%);
+  --dark-green: #008000;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--dark-flow);
+  background-color: var(--dark-green);
   background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
   background-repeat: no-repeat, no-repeat;
