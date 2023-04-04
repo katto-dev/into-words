@@ -25,6 +25,7 @@ body {
 .flex {
   align-items: flex-start;
   display: flex;
+  flex-direction: row; 
   justify-content: center;
   height: 100vh;
   padding-top: 100px;
@@ -44,10 +45,15 @@ article {
   width: 326px;
   /*transform: rotateY(180deg);*/
 }
-.card-cover-header {
+.card-cover-image-header {
+  background-color: white;
+  border: 0px solid white;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
   display: block;
   height: 145px;
-  width: 100%;
+  overflow: hidden;
+  width: 326px;
 }
 .card-cover-body {
   align-items: center;
@@ -55,16 +61,20 @@ article {
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: 326px;
 }
 .card-cover-body-img {
   border: 10px solid white;
   border-radius: 50%;
   background-image: url("../img/cards/presentacion-back.jpg");
   background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   height: 200px;
   margin-top: -105px;
   width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .card-cover-body-title {
   font-size: 1.8rem;
@@ -160,7 +170,7 @@ button:hover {
 }
 
 /* CARD BACKCOVER */
-.card-backcover-body {
+.card-backcover {
   align-items: center;
   border-bottom: 0px solid rgba(153, 153, 153, 0.383);
   display: flex;
@@ -168,10 +178,7 @@ button:hover {
   max-height: 495px;
   width: 326px;
 }
-.card-backcover-body span {
-  padding-bottom: 100px;
-}
-.card-backcover-image {
+.card-backcover-image-back {
   background-color: white;
   border: 10px solid white;
   border-radius: 16px;
@@ -179,12 +186,12 @@ button:hover {
   height: 495px;
   overflow: hidden;
   width: 326px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
 }
 
-
+@media all and (max-width: 768px) {
+  .card-backcover {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
