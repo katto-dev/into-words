@@ -39,7 +39,7 @@ article {
 /* CARD COVER */
 .card-cover {
   background-color: white;
-  /*border: 1px solid yellow;*/
+  border: 1px solid black;
   border-radius: 16px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   overflow: hidden;
